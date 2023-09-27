@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17c1e8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Nuworld Business Systems</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <body>
+    <div id="paymenturl"></div>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script>
+      $(document).ready(function () {
+        const elem = `<a href='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest=d5a56fd8c4b85faae7193fd04dc95f7d31cc4fed45f102899c1c44e014215c79dec92899c3972ee77a9ca851a531a90b0ee51d49bf8059bb2599ebff256ad616a14fbece9b166b56a52561bf2f424779&access_code=AVRL94KG22CN49LRNC&billAddress=kajala&billCity=HARYANA&billState=HARYANA&billZip=123501&billName=ASHOK%20KUMAR&billEmail=ashok1bishnoi@gmail.com&billTel=9416047136' target='_blank'>click</a>`;
+
+        setTimeout(() => {
+          $("#paymenturl").html(elem);
+        }, 1000);
+
+        /*
+        var url = new URL(window.location.href);
+        var access_code = url.searchParams.get("access_code");
+        var encRequest = url.searchParams.get("encRequest");
+        var iframDoc = document.getElementById("paymentFrame");
+
+        window.open(
+          "https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest=" +
+            encRequest +
+            "&access_code=" +
+            access_code,
+          "_blank"
+        );
+
+        iframDoc.src =
+          "https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest=" +
+          encRequest +
+          "&access_code=" +
+          access_code;
+
+        window.addEventListener(
+          "message",
+          function (e) {
+            $("#paymentFrame").css("height", e.data["newHeight"] + "px");
+          },
+          false
+        );
+        */
+      });
+    </script>
+  </body>
+</html>

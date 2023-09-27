@@ -1,0 +1,119 @@
+.location-badge {
+  position: relative;
+}
+.location-badge h3 {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: #c89132;
+  color: white;
+  padding: 10px;
+}
+.polygon-txt {
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+}
+.polygon-txt p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.investment-txt {
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.investment-title {
+  color: #26282b;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.investemt-para {
+  color: #3a3a3a;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.investment-bg {
+  background-color: #000000;
+}
+.realty-investments .welcome-containt {
+  padding-top: 0px;
+}
+.realty-investments .welcome-containt h3.mb-4 {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 600;
+}
+.realty-investments .welcome-containt p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+}
+.realty-investments .welcome-containt h6 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+/* revenue css start */
+
+.invest-border {
+  color: #26282b;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 52px;
+  position: relative;
+  display: inline-block;
+}
+.invest-border::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: -70px;
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(0deg, #26282b 0%, #26282b 100%),
+    lightgray 0px -227.003px / 100% 406.428% no-repeat;
+}
+.invest-border::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: -70px;
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(0deg, #26282b 0%, #26282b 100%),
+    lightgray 0px -227.003px / 100% 406.428% no-repeat;
+}
+.revenue_box p{
+    font-weight:600;
+}
+@media(max-width:767px){
+    .invest-border{
+        font-size: 22px;
+    }
+    .invest-border::after{
+        width: 30px;
+        left: -40px;
+    }
+    .invest-border::before {
+        width: 30px;
+        right: -40px;
+    }
+}
+
+
+.revenue_box p{
+    font-size: 14px !important;
+}

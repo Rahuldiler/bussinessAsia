@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+body {
+  font-family: "Poppins",sans-serif !important;
+  background-color: #fff;
+}
+.padding_box{
+  padding: 30px 0rem;
+}
+.btn{
+    font-size: 16px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    display: inline-block !important;
+    max-width: max-content !important;
+}
+.btn:focus,
+.btn:hover{
+    box-shadow: none;
+    outline: auto;
+}
+.btn-primary{
+    background: #C89132!important;
+    color: #ffffff !important;
+    border: 1px solid #C89132 !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important; 
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background: #fff !important;
+    color: #C89132 !important;
+    border: 1px solid #C89132 !important;
+}
+.btn-primary2{
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  display: inline-flex;
+  padding: 10px 47px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.navbar_wrapper .navbar-brand img {
+  max-width: 100px;
+  height: auto;
+}
+.navbar_wrapper .navbar-nav .nav-link{
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px ;
+}
+.navbar_wrapper .navbar-nav .nav-link.active{
+    color: #c89132;
+}
+
+
+
+@media(max-width:767px){
+  h1{
+    font-size: 22px;
+  }
+}

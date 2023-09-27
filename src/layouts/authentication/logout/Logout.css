@@ -1,0 +1,26 @@
+.logout-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4%;
+  height: 100%;
+}
+
+.logout-container .button-center {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.logout-container .title {
+  text-align: center;
+}
+/*# sourceMappingURL=Logout.css.map */

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner_Wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  background-image: url(../images/website/banner.jpg);
+}
+.banner_Wrapper .first-bannertxt {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 62px;
+}
+.banner_Wrapper .second-bannertxt {
+  color: #c89132;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 62px;
+}
